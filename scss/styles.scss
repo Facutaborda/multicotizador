@@ -1,0 +1,29 @@
+@import 'mixins';
+@import 'variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    background-color: map-get($colors, tercero);
+}
+
+.titulo {
+    @include position(flex, column, center, center, center);
+    height: 50vh;
+    background-color: map-get($colors, primero);
+
+    h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        color: map-get($colors , cuarto );
+    }
+    p{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}

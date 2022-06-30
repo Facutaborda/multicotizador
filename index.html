@@ -6,130 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multicotizador</title>
+    <link rel="icon" href="./img/icono.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 <body>
-    <div class="titulo">
-        <h1>Multicotizador</h1>
-        <p>
-            Primeras pruebas de cálculos.
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Multicotizador</h2>
+            </div>
+            <ul>
+                <li><a href=""></a>Inicio</li>
+                <li><a href=""></a>Acerca de</li>
+                <li><a href=""></a>Contacto</li>
+                <li><a href=""></a>Clientes</li>
+
+                <img class="nav__cerrar" src="./img/cerrar.svg" alt="cierre menu">
+            </ul>
+            <div class="nav__menu">
+                <img src="./img/ham.svg" alt="menu hamburguesa" class="nav__img">
+            </div>
+        </nav>
+        <div class="hero__container container">
+            <h1 class="hero__title">Multicotizador Online - Seguros</h1>
+            <p class="hero__p">
+                Cotizá la mejor cobertura para tu vehiculo y contratá con las mejores companías del pais.
+            </p>
+            <a href="#" class="btn">Cotizá ahora</a>
+        </div>
+    </header>
+    <main>
+
+    <section class="container beneficios">
+        <h2 class="subtitulo">Conoce los beneficios por contratar tu poliza 
+            Online</h2>
+        <p class="beneficios__p">
+            Contratando el seguro de tu vehiculo te bonificamos
         </p>
-    </div>
-    <div class="principal">
-        <h2>Cotizácion en el acto</h2>
-        <ul>
-            <li>Autos</li>
-            <li>Motos</li>
-        </ul>
-    </div>
-    <!-- <script>
-        const NOMBRE = "Facundo";
-        console.log(NOMBRE)
-        let mail = "orgcentro.facu@gmail.com";
-        console.log(mail)
-        const objeto = {
-            nombre: "Facundo",
-            apellido: "Taborda"
-        }
-        const COLORES = ["blanco", "negro", "amarillo"]
+        <div class="beneficios__menu">
+            <article class="beneficios__iconos">
+                <img src="./img/descuento.svg" class="beneficios__icono" alt="">
+                <h3 class="beneficio__titulo">20% de Descuento</h3>
+                <p class="beneficio__p">
+                Bonificacion sobre tu su seguro actual, todas las coberturas.
+                </p>
+            </article>
 
-        console.log(objeto)
-        console.log(COLORES)
+            <article class="beneficios__iconos">
+                <img src="./img/salud.svg" class="beneficios__icono" alt="">
+                <h3 class="beneficio__titulo">Hogar Protegido</h3>
+                <p class="beneficio__p">
+                Asistencia al hogar las 24hs. / Plan de salud para el titular y su familia.
+                </p>
+            </article>
 
-        objeto.numero = "3518080587"
-        COLORES.push("rojo")
+            <article class="beneficios__iconos">
+                <img src="./img/vehiculo.svg" class="beneficios__icono" alt="">
+                <h3 class="beneficio__titulo">Vehículo Protegido</h3>
+                <p class="beneficio__p">
+                    Servicio de grúas hasta 1000km. / Cobertura médica en tu vehículo.
+                </p>
+            </article>
+        </div>
 
-        console.log(objeto)
-        console.log(COLORES)
 
-        let marca = "Multicotizador"
-        let lorem = "Lorem ipsum, dolor sit amet consectertur nome sirve facundo"
-        console.log(marca.toUpperCase(),
-            NOMBRE.toLowerCase(),
-            lorem.includes("facundo"),
-            lorem.split(" ")
-        );
-        let saludo = "Hola! mi nombre es " + NOMBRE + " " + marca + ".";
-        console.log(saludo)
-        let saludo2 = `Hola! mi nombre es ${NOMBRE} ${marca}.`;
-        console.log(saludo2)
-        let ul = `
-        <ul>
-        <li>Autos</li>
-        <li>Motos</li>
-        <li>Salud</li>
-        <li>Sepelio</li>
-        </ul>
-        `;
-        console.log(ul)
+    </section>
+    <section class="asesorar">
+        <div class="asesorar__container container">
+            <div class="asesorar__texto">
+                <h2 class="subtitulo">No dudes en consultar por un asesoramiento personalizado. ¡Contáctanos!</h2>
+                <p class="asesorar__p">
+                    Nos especializamos en seleccionar el mejor seguro para cubrir tus riesgos, asi sea para tus bienes y patrimonio, como para tu vida y familia. Vamos a brindarte una solución a tu medida para satisfacer tus distintas necesidades.
+                </p>
+                <a href="#" class="btn">¡Quiero asesoramiento!</a>
+            </div>
 
-        //NUMEROS-----------------------------------
-        let a = 1;
-        let b = new Number(2);
-        let c = 5.10;
-        let d = "5.90"
+            <figure class="asesorar__imagen">
+                <img src="./img/interview.png" alt="asesoramiento imagen" class="asesorar__img">
+            </figure>
+        </div>
 
-        console.log(a, b);
-        console.log(c.toFixed(1));
-        console.log(c.toFixed(2));
-        console.log(parseInt(c));
-        console.log(parseFloat(c));
-        console.log(a + b);
-        console.log(c + d); //Esta suma la hace como concatenacion ya que tiene texto y numero
-        console.log(c + parseInt(d))
-        console.log(c + parseFloat(d))
-        console.log(c + Number.parseInt(d))
-        console.log(c + Number.parseFloat(d))
+    </section>
 
-        //Booleans-------------------------------------7*por 
-        let verdadero = true;
-        let falso = false;
-        console.log(verdadero, falso)
-        console.log(typeof verdadero, typeof falso)
 
-        //null undefined Nan ----------------------------
-        let indefinida; //indica que no se ha inicializado una variable y que el valor esta ausente
-        console.log(indefinida);
 
-        let nulo = null; // es un valor especial que indica la ausencia de un valor
-        console.log(nulo);
 
-        let noEsUnNumero = "Hola" * 3.7;
-        console.log(noEsUnNumero);
 
-        // Funcion declarada-------------------------------
-        function estoEsUnaFuncion(){
-        console.log("uno");
-        console.log("dos");
-        console.log("tres");
-        };
-        //Invocacion de funcion
-        
-        function saludar(nombre = "desconocido", edad = 0){
-            console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`)
-        };
-        saludar("facu", 28);
-        saludar();
 
-        //----------------------
-        funcionDeclarada();
 
-        function funcionDeclarada (){
-            console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, incluso antes de que la funcion sea declarada");
-        }
-        funcionDeclarada();
-        //Funcion anonima
-        //FUNCIONEXPESADA();
-        const FUNCIONEXPESADA = function (){
-            console.log("esto es una funcion expresada, es decir una funcion que se le designo a una variable. Si invocamos esta funcion antes de su definicion JS nos dira.....")
-            }
-        FUNCIONEXPESADA();
 
-        
-    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

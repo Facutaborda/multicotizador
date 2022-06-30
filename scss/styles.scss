@@ -1,5 +1,5 @@
-@import 'mixins';
 @import 'variables';
+
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +9,184 @@
 body {
     font-family: 'Roboto', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
-    background-color: map-get($colors, tercero);
 }
 
-.titulo {
-    @include position(flex, column, center, center, center);
-    height: 50vh;
-    background-color: map-get($colors, primero);
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 
-    h1 {
-        font-weight: bold;
-        font-size: 3rem;
-        color: map-get($colors , cuarto );
+// Seccion Superior
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: white;
+
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/img/hero.jpg);
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+        z-index: -1;
     }
-    p{
-        font-weight: bold;
+
+    .nav {
+        padding: 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .nav__title {
+            font-weight: 300;
+        }
+
+        ul {
+            margin-top: 16px;
+            margin-left: auto;
+            padding: 0;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: max-content;
+            gap: 2em;
+
+            li {
+                list-style: none;
+            }
+
+            .nav__cerrar {
+                display: none;
+            }
+        }
+
+        .nav__menu {
+            margin-left: auto;
+            cursor: pointer;
+            display: none;
+
+            .nav__img {
+                display: block;
+                width: 30px;
+            }
+        }
+    }
+
+    .hero__container {
+        max-width: 800px;
+        padding: 0;
+        display: grid;
+        grid-auto-rows: max-content;
+        align-content: center;
+        gap: 1em;
+        padding-bottom: 100px;
+        text-align: center;
+
+        .hero__title {
+            font-size: 3.3rem;
+        }
+
+        .hero__p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.btn {
+    font-size: 1em;
+    display: inline-block;
+    background-color: map-get($colors, primero);
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 32px;
+}
+
+// Seccion Beneficios
+.beneficios {
+    text-align: center;
+
+    .subtitulo {
+        color: map-get($colors, segundo);
         font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .beneficios__p {
+        line-height: 1.7;
+    }
+
+    .beneficios__menu {
+        padding-top: 80px;
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        gap: 1em;
+        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+
+        .beneficios__iconos {
+            display: grid;
+            gap: 1em;
+            justify-items: center;
+            width: 260px;
+            overflow: hidden;
+            margin: auto;
+
+            .beneficios__icono {
+                width: 40px;
+            }
+        }
+    }
+
+}
+
+// Seccion Asesoramiento
+.asesorar {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#2091f9 0.5px, transparent 0.5px), radial-gradient(#2091f9 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+
+    .asesorar__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .asesorar__texto {
+        .subtitulo {
+            color: map-get($colors, segundo);
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .asesorar__p {
+            line-height: 1.7;
+        }
+    }
+
+    .asesorar__imagen {
+        max-width: 500px;
+
+        .asesorar__img {
+            width: 100%;
+            display: block;
+        }
     }
 }

@@ -133,3 +133,55 @@ body {
     .asesorar .asesorar__imagen .asesorar__img {
       width: 100%;
       display: block; }
+
+.promos {
+  text-align: center; }
+  .promos .promos__tabla {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center; }
+    .promos .promos__tabla .promos__elemento {
+      background-color: #e5e5f7;
+      text-align: center;
+      border-radius: 10px;
+      width: 330px;
+      padding: 40px; }
+      .promos .promos__tabla .promos__elemento .promos__name {
+        color: #696871;
+        margin-bottom: 15px;
+        font-weight: bold;
+        font-size: 1.5rem; }
+      .promos .promos__tabla .promos__elemento .promos__precio {
+        font-size: 2.5rem;
+        color: #1d293f; }
+      .promos .promos__tabla .promos__elemento .promos__caract {
+        margin-top: 35px;
+        display: grid;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+        color: #696871; }
+      .promos .promos__tabla .promos__elemento .promos__btn {
+        display: block;
+        padding: 20px 0;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #fff;
+        font-weight: 600;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+    .promos .promos__tabla .promos__elemento--best {
+      width: 370px;
+      padding: 60px 40px;
+      background-color: #FF7143; }
+      .promos .promos__tabla .promos__elemento--best .promos__name {
+        color: #fff; }
+      .promos .promos__tabla .promos__elemento--best .promos__precio {
+        color: #fff; }
+      .promos .promos__tabla .promos__elemento--best .promos__item {
+        color: #fff; }
+      .promos .promos__tabla .promos__elemento--best .promos__btn {
+        background-color: #9f3919;
+        color: #fff; }

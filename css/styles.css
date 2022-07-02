@@ -136,6 +136,10 @@ body {
 
 .promos {
   text-align: center; }
+  .promos .subtitulo {
+    color: #001a49;
+    font-size: 2rem;
+    margin-bottom: 25px; }
   .promos .promos__tabla {
     padding-top: 60px;
     display: flex;
@@ -185,3 +189,35 @@ body {
       .promos .promos__tabla .promos__elemento--best .promos__btn {
         background-color: #9f3919;
         color: #fff; }
+
+.companias {
+  background-color: #e5e5f7; }
+  .companias .companias__container {
+    margin: 0 auto; }
+    .companias .companias__container .companias__body {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5em;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .companias .companias__container .companias__body .companias__texto {
+        max-width: 700px; }
+        .companias .companias__container .companias__body .companias__texto .subtitulo {
+          color: #001a49;
+          font-size: 2rem;
+          margin-bottom: 25px; }
+        .companias .companias__container .companias__body .companias__texto .companias__info {
+          background-color: royalblue;
+          color: #FFF;
+          display: inline-block;
+          padding: 5px; }
+      .companias .companias__container .companias__body .companias__img {
+        width: 150px;
+        height: 150px; }
+
+.preguntas .subtitulo {
+  color: #001a49;
+  font-size: 2rem;
+  margin-bottom: 25px; }

@@ -194,6 +194,11 @@ body {
 // Seccion Promociones
 .promos {
     text-align: center;
+    .subtitulo {
+        color: map-get($colors, segundo);
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
 
     .promos__tabla {
         padding-top: 60px;
@@ -247,19 +252,69 @@ body {
             padding: 60px 40px;
             background-color: map-get($colors, cuarto);
 
-            .promos__name{
-                color:#fff;
-            }
-            .promos__precio{
+            .promos__name {
                 color: #fff;
             }
-            .promos__item{
+
+            .promos__precio {
                 color: #fff;
             }
-            .promos__btn{
+
+            .promos__item {
+                color: #fff;
+            }
+
+            .promos__btn {
                 background-color: #9f3919;
                 color: #fff;
             }
         }
+    }
+}
+
+// Seccion Companias
+.companias {
+    background-color: #e5e5f7;
+
+    .companias__container {
+        margin: 0 auto;
+        .companias__body {
+            display: grid;
+            grid-template-columns: 1fr max-content;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5em;
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            .companias__texto {
+                max-width: 700px;
+                .subtitulo {
+                    color: map-get($colors, segundo);
+                    font-size: 2rem;
+                    margin-bottom: 25px;
+                }
+                .companias__info{
+                    background-color: royalblue;
+                    color: #FFF;
+                    display: inline-block;
+                    padding: 5px;
+                }
+            }
+            .companias__img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+    }
+}
+
+// Seccion Preguntas
+.preguntas{
+    .subtitulo {
+        color: map-get($colors, segundo);
+        font-size: 2rem;
+        margin-bottom: 25px;
     }
 }

@@ -279,6 +279,7 @@ body {
 
     .companias__container {
         margin: 0 auto;
+        overflow-x: hidden;
 
         .companias__body {
             display: grid;
@@ -369,9 +370,79 @@ body {
         }
 
     }
-    .preguntas__nuevas{
-        .preguntas__texto{
+
+    .preguntas__nuevas {
+        .preguntas__texto {
             margin-bottom: 15px;
+        }
+    }
+
+}
+
+// Seccion Articulos Tienda
+
+.articulos {
+    text-align: center;
+    background-color: #e5e5f7;
+
+    .articulos__container {
+        margin: 0 auto;
+
+        .subtitulo {
+            color: map-get($colors, segundo);
+            font-size: 3rem;
+            margin-bottom: 25px;
+        }
+
+        .kitAuto, .fuego {
+            margin: auto;
+
+            h2 {
+                font-size:  2rem;
+                color: map-get($colors, segundo);
+                margin: 20px;
+            }
+
+            .container__kits, .container__fuego {
+                display: grid;
+                width: 90%;
+                margin: 0 auto;
+                overflow: hidden;
+                grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+                justify-content: space-between;
+                gap: 1em;
+
+                .articulo {
+                    display: grid;
+                    gap: 0.5em;
+                    justify-items: center;
+                    overflow: hidden;
+                    margin: auto;
+
+                    .articulo__img {
+                        width: 100%;
+                    }
+                    .articulo__detalle { 
+                        
+                        .articulo__precio{
+                        font-size: 20px;
+                        font-weight: bold;
+                        }
+                    }
+                    .articulo__btn{
+                        font-size: 1em;
+                        display: inline-block;
+                        background-color:  map-get($colors, primero);;
+                        justify-self: center;
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 8px 30px;
+                        border-radius: 20px;
+                        border: 1px solid rgb(41, 37, 241);
+                    }
+                }
+                
+            }
         }
     }
 

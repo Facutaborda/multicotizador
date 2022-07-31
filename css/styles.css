@@ -193,7 +193,8 @@ body {
 .companias {
   background-color: #e5e5f7; }
   .companias .companias__container {
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow-x: hidden; }
     .companias .companias__container .companias__body {
       display: grid;
       grid-template-columns: 1fr max-content;
@@ -255,3 +256,48 @@ body {
           margin-bottom: 20px; }
   .preguntas .preguntas__nuevas .preguntas__texto {
     margin-bottom: 15px; }
+
+.articulos {
+  text-align: center;
+  background-color: #e5e5f7; }
+  .articulos .articulos__container {
+    margin: 0 auto; }
+    .articulos .articulos__container .subtitulo {
+      color: #001a49;
+      font-size: 3rem;
+      margin-bottom: 25px; }
+    .articulos .articulos__container .kitAuto, .articulos .articulos__container .fuego {
+      margin: auto; }
+      .articulos .articulos__container .kitAuto h2, .articulos .articulos__container .fuego h2 {
+        font-size: 2rem;
+        color: #001a49;
+        margin: 20px; }
+      .articulos .articulos__container .kitAuto .container__kits, .articulos .articulos__container .kitAuto .container__fuego, .articulos .articulos__container .fuego .container__kits, .articulos .articulos__container .fuego .container__fuego {
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        justify-content: space-between;
+        gap: 1em; }
+        .articulos .articulos__container .kitAuto .container__kits .articulo, .articulos .articulos__container .kitAuto .container__fuego .articulo, .articulos .articulos__container .fuego .container__kits .articulo, .articulos .articulos__container .fuego .container__fuego .articulo {
+          display: grid;
+          gap: 0.5em;
+          justify-items: center;
+          overflow: hidden;
+          margin: auto; }
+          .articulos .articulos__container .kitAuto .container__kits .articulo .articulo__img, .articulos .articulos__container .kitAuto .container__fuego .articulo .articulo__img, .articulos .articulos__container .fuego .container__kits .articulo .articulo__img, .articulos .articulos__container .fuego .container__fuego .articulo .articulo__img {
+            width: 100%; }
+          .articulos .articulos__container .kitAuto .container__kits .articulo .articulo__detalle .articulo__precio, .articulos .articulos__container .kitAuto .container__fuego .articulo .articulo__detalle .articulo__precio, .articulos .articulos__container .fuego .container__kits .articulo .articulo__detalle .articulo__precio, .articulos .articulos__container .fuego .container__fuego .articulo .articulo__detalle .articulo__precio {
+            font-size: 20px;
+            font-weight: bold; }
+          .articulos .articulos__container .kitAuto .container__kits .articulo .articulo__btn, .articulos .articulos__container .kitAuto .container__fuego .articulo .articulo__btn, .articulos .articulos__container .fuego .container__kits .articulo .articulo__btn, .articulos .articulos__container .fuego .container__fuego .articulo .articulo__btn {
+            font-size: 1em;
+            display: inline-block;
+            background-color: #2091f9;
+            justify-self: center;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 30px;
+            border-radius: 20px;
+            border: 1px solid #2925f1; }

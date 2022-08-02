@@ -54,12 +54,13 @@ body {
         }
 
         ul {
-            margin-top: 16px;
+
             margin-left: auto;
             padding: 0;
             display: grid;
             grid-auto-flow: column;
             grid-auto-columns: max-content;
+            align-items: center;
             gap: 2em;
 
             li {
@@ -103,8 +104,17 @@ body {
         }
     }
 }
-
-.btn {
+#compras__btn{
+    font-size: 1em;
+    display: inline-block;
+    background-color: map-get($colors, primero);
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 8px 1px 8px ;
+    border-radius: 20px;
+}
+.btn{
     font-size: 1em;
     display: inline-block;
     background-color: map-get($colors, primero);
@@ -114,6 +124,7 @@ body {
     padding: 8px 30px;
     border-radius: 32px;
 }
+
 
 // Seccion Beneficios
 .beneficios {

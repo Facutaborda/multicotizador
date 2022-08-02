@@ -42,12 +42,12 @@ body {
     .hero .nav .nav__title {
       font-weight: 300; }
     .hero .nav ul {
-      margin-top: 16px;
       margin-left: auto;
       padding: 0;
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: max-content;
+      align-items: center;
       gap: 2em; }
       .hero .nav ul li {
         list-style: none; }
@@ -74,6 +74,16 @@ body {
     .hero .hero__container .hero__p {
       margin-bottom: 20px;
       font-size: 1.2em; }
+
+#compras__btn {
+  font-size: 1em;
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 8px 1px 8px;
+  border-radius: 20px; }
 
 .btn {
   font-size: 1em;

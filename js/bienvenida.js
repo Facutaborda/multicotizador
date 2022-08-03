@@ -18,12 +18,35 @@ const fundaMatafuego2 = new articulo("fundaMatafuego2", "Funda Soporte", "Funda 
 let kitAuto = [kitEmergencias1, kitEmergencias2, kitEmergencias3];
 let fuego = [matafuego, fundaMatafuego, fundaMatafuego2];
 
+const articulosNecesarios = [kitEmergencias1, kitEmergencias2, kitEmergencias3, matafuego, fundaMatafuego, fundaMatafuego2];
+
 const totalArticulos = [kitAuto, fuego];
+
+console.log(articulosNecesarios);
 
 const $artKits = document.querySelector(".container__kits");
 const $artFuego = document.querySelector(".container__fuego");
 
 const art = [$artKits, $artFuego]
+
+const divcarrito = (articulos) => {
+    const divCarrito = document.querySelector('.carrito_compras_container')
+    articulos.forEach(articulo => {
+        const div = document.createElement('div');
+        div.classList.add('articulo');
+        div.innerHTML = `
+        <div class = "articulo">
+            <img class = "articulo__img" src="/img/${articulo.id}.jpg" alt="">
+            <h3 class = "articulo__h3">${articulo.nombre}</h3>
+            <p class = "articulo__detalle">${articulo.descripcion}<br><span class = "articulo__precio"> $${articulo.precio}</span></p>
+            <button class = "articulo__btn" id ="${articulo.id}">Agregar al carrito</button> 
+        </div>
+        `
+        divCarrito.appendChild(div)
+    });
+}
+divcarrito(articulosNecesarios)
+
 
 for (i = 0; i < totalArticulos.length; i++) {
     let html = "";

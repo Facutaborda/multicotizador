@@ -21,19 +21,11 @@
                 <li><a href=""></a>Inicio</li>
                 <li><a href=""></a>Acerca de</li>
                 <li><a href=""></a>Contacto</li>
-                <li id="compras__btn"><img src="./img/carritto.svg" class="beneficios__icono" alt=""></li>
+                <li id="compras__btn"><img src="./img/carritto.svg" class="beneficios__icono" alt=""><a href="#"></a></li>
                 <img class="nav__cerrar" src="./img/cerrar.svg" alt="cierre menu">
             </ul>
             <div class="nav__menu">
                 <img src="./img/ham.svg" alt="menu hamburguesa" class="nav__img">
-            </div>
-            <div class="modal__container">
-                <div class="modal modal-close">
-                    <p class="close">X</p>
-                    <div class="carrito">
-                        
-                    </div>
-                </div>
             </div>
         </nav>
         <div class="hero__container container">
@@ -44,6 +36,16 @@
             <a href="#" class="btn">Cotizá ahora</a>
         </div>
     </header>
+    <div class="modal__container">
+        <div class="modal modal-close">
+            <p class="close">X</p>
+            <h2 class="modal__titulo">Carrito de Compras</h2>
+            <img src="img/carrito.svg"  alt="" class="modal__img">
+            <div class="carrito">
+                
+            </div>
+        </div>
+    </div>
     <main>
         <section class="container beneficios">
             <h2 class="subtitulo">Conoce los beneficios por contratar tu poliza
@@ -236,9 +238,9 @@
         </section>
         <section class="carrito">
             <div class="carrito__container container">
-                <h2 class="carrito__titulo">Lista</h2>
+                <h2 class="subtitulo">Lista</h2>
                 <div class="carrito_compras_container">
-                    <ul class="lista__carrito"></ul>
+
                 </div>
             </div>
 
@@ -247,5 +249,5 @@
     </main>
 </body>
 <script src="./js/bienvenida.js"></script>
-
+<script src="./js/index.js"></script>
 </html>

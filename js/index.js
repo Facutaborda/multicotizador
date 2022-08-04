@@ -15,5 +15,15 @@ cerrar.addEventListener("click", function cerrar(e) {
     setTimeout(function tiempo() {
         cModal.style.opacity = "0";
         cModal.style.visibility = "hidden";
-    },850)
+    }, 850)
+})
+
+window.addEventListener("click", function cerrarEsp(e) {
+    if (e.target == cModal) {
+        modal.classList.toggle("modal-close");
+        setTimeout(function tiempo() {
+            cModal.style.opacity = "0";
+            cModal.style.visibility = "hidden";
+        }, 850)
+    }
 })

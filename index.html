@@ -41,8 +41,20 @@
             <p class="close">X</p>
             <h2 class="modal__titulo">Carrito de Compras</h2>
             <img src="img/carrito.svg"  alt="" class="modal__img">
-            <div class="carrito">
+            <div class="carrito__container"> 
+                <div id="carrito">
+                <div class="item__carrito1">
+                    <p>Cantidad</p>
+                    <p>Detalle</p>
+                    <p>Precio</p>
+                    <p>Eliminar</p>
+                </div>
                 
+            </div>
+            <div class="carrito__total">
+                <p class="totalCarrito"></p>
+                <button class="carrito__finalizar__compra">Finalizar</button>
+            </div>
             </div>
         </div>
     </div>
@@ -222,29 +234,12 @@
         <section class="articulos">
             <div class="articulos__container container">
                 <h2 class="subtitulo">Articulos necesarios para circular</h2>
-                <div class="kitAuto" id="kits">
-                    <h2 class="">Kit Reglamentarios</h2>
-                    <div class="container__kits">
-
-                    </div>
-                </div>
-                <div class="fuego">
-                    <h2 class="">Matafuegos</h2>
-                    <div class="container__fuego">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="carrito">
-            <div class="carrito__container container">
-                <h2 class="subtitulo">Lista</h2>
                 <div class="carrito_compras_container">
-
+        
                 </div>
+
+
             </div>
-
-
         </section>
     </main>
 </body>
